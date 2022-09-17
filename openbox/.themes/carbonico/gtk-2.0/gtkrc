@@ -1,0 +1,192 @@
+# carbonico v01 by crimeboy
+# inspired on adidas skin from xmms
+# based on neutronium of sen7
+
+gtk-font-name = "smooth 12"
+font-name = "smooth 12"
+style "theme-default"
+{
+  GtkButton      ::default_border    = { 0, 0, 0, 0 }
+  GtkRange       ::trough_border     = 0
+  GtkPaned       ::handle_size       = 6
+  GtkRange       ::slider_width      = 10
+  GtkRange       ::stepper_size      = 10
+
+  GtkScrollbar   ::min_slider_length = 30
+  GtkCheckButton ::indicator_size    = 14
+  GtkMenuBar     ::internal-padding  = 0
+  GtkTreeView    ::expander_size     = 14
+  GtkExpander    ::expander_size     = 16
+  GtkScale       ::slider-length     = 24
+  GtkWidget::cursor_color           		= "#101010"
+  GtkWidget::secondary_cursor_color 	= "#111111"
+  
+xthickness = 1
+  ythickness = 1
+
+ 	fg[NORMAL]		= "#bfbfbf" # Metacity and mouseover, Most text
+	fg[PRELIGHT]      	= "#ffffff" # Text when mouseover
+	fg[ACTIVE]	  	= "#bfbfbf" # Text when mouseclicking button, Tabs, Active window list
+	fg[SELECTED]      	= "#bfbfbf" # Metacity X when window selected
+	fg[INSENSITIVE]   	= "#4d4d4d" # Insensitive Text
+
+	bg[NORMAL]	  	= "#121212" # Normal Background, inactive Metacity bar, buttons
+	bg[PRELIGHT]	  	= "#212121" # Mouseover buttons
+	bg[ACTIVE]	  	= "#222222" # Mouseclicking, Tabs, active window list
+	bg[SELECTED]	        = "#222222" # Metacity Bar
+	bg[INSENSITIVE]   	= "#121212" # Insensitive buttons
+	
+	base[NORMAL]	= "#878772" # "#121212" # Background, most
+	base[PRELIGHT]	= "#212121" # Mouseover menu
+	base[ACTIVE]	  	= "#222222" # Menu active item in inactive window
+	base[SELECTED]	= "#222222" # Menu active item in active window
+	base[INSENSITIVE] 	= "#121212" # Background, insensitive
+	
+	text[NORMAL]	  	= "#CCCCCC" # "#bfbfbf" # Text in window
+	text[PRELIGHT]	= "#ffffff" # Text on Mouseover
+	text[ACTIVE]	  	= "#4d4d4d" # Active text in inactive window
+	text[SELECTED]    	= "#bfbfbf" # Active text in active window
+	text[INSENSITIVE] 	= "#212121" # Unknown
+
+  
+  engine "murrine" 
+  {
+	scrollbarstyle = 1 # Enable or disable circles, stripes, handles
+	listviewstyle = 1 # 0 = nothing, 1 = dotted
+	menuitemstyle = 2 # 0 = flat, 1 = glassy, 2 = striped
+	scrollbar_color = "#222222"
+	contrast = 1.0
+	glazestyle = 0 # 0 = flat hilight, 1 = curved hilight, 2 = concave style, 3 = top curved hilight, 4 = beryl style
+	menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+	menubaritemstyle = 1 # 0 = menuitem look, 1 = button look
+	menuitemstyle = 0 # 0 = flat, 1 = glassy, 2 = striped
+	listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
+	roundness = 0 # 0 = squared, 1 = old default, more will increase roundness
+    	animation = TRUE # FALSE = disabled, TRUE = enabled
+  }
+}
+
+
+style "theme-wide" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "theme-wider" = "theme-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "theme-entry" = "theme-wider"
+{
+  bg[SELECTED]	    = "#222222"
+}
+
+style "theme-button" = "theme-wider"
+{
+  bg[NORMAL]        = "#191919"
+  bg[ACTIVE]      = "#222222"
+ }
+
+style "theme-notebook" = "theme-wide"
+{
+
+}
+
+style "theme-tasklist" = "theme-default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "theme-menu" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 1
+ bg[NORMAL] = "#191919" 
+}
+
+style "theme-menu-item" = "theme-default"
+{
+  ythickness = 3
+    fg[PRELIGHT] = "#ffffff"
+  text[PRELIGHT] = "#ffffff"
+  bg[SELECTED] = "#222222" 
+}
+
+style "theme-menubar" = "theme-default"
+{
+  bg[NORMAL] = "#121212"
+}
+
+style "theme-menubar-item"
+{
+	ythickness = 4
+	bg[PRELIGHT] = "#222222"
+}
+
+style "theme-tree" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "theme-frame-title" = "theme-default"
+{
+  fg[NORMAL] = "#bfbfbf"
+}
+
+style "theme-tooltips" = "theme-default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = "#121212"
+}
+
+style "theme-progressbar" = "theme-wide"
+{
+  xthickness = 1
+  ythickness = 1
+  fg[PRELIGHT]  = "#bfbfbf"
+}
+
+style "theme-combo" = "theme-button"
+{
+}
+
+# widget styles
+class "GtkWidget"      style "theme-default"
+class "GtkButton"      style "theme-button"
+class "GtkScale"       style "theme-button"
+class "GtkCombo"       style "theme-button"
+class "GtkRange"       style "theme-wide"
+class "GtkFrame"       style "theme-wide"
+class "GtkMenu"        style "theme-menu"
+class "GtkEntry"       style "theme-entry"
+class "GtkMenuItem"    style "theme-menu-item"
+class "GtkNotebook"    style "theme-notebook"
+class "GtkProgressBar" style "theme-progressbar"
+class "*MenuBar*"      style "theme-menubar"
+
+widget_class "*MenuItem.*" style "theme-menu-item"
+widget_class "*MenuBar.*"  style "theme-menubar-item"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton" style "theme-combo"
+widget_class "*.GtkCombo.GtkButton"    style "theme-combo"
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton" style "theme-tasklist"
+widget "gtk-tooltips" style "theme-tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton" style "theme-tree"
+widget_class "*.GtkCTree.GtkButton" style "theme-tree"
+widget_class "*.GtkList.GtkButton" style "theme-tree"
+widget_class "*.GtkCList.GtkButton" style "theme-tree"
+widget_class "*.GtkFrame.GtkLabel" style "theme-frame-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox" style "theme-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "theme-notebook"
