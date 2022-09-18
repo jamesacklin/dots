@@ -1,3 +1,3 @@
-hsetroot -solid gray33 &
+hsetroot -solid gray50 &
 sxhkd &
-polybar -r &
+polybar top -r &
