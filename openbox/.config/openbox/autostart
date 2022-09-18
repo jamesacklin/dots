@@ -1,2 +1,3 @@
+hsetroot -solid gray33 &
 sxhkd &
 polybar -r &
