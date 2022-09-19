@@ -14,7 +14,7 @@ alt + shift + Return
 	xterm
 
 alt + p
-	dmenu_run -fn "terminus-8" -h 21
+	dmenu_run -fn "terminus-8" -h 22 -nb '#000000' -sf '#000000' -sb '#FFFFFF' -nf '#FFFFFF'
 
 Print
 	flameshot gui

@@ -1,3 +1,3 @@
-hsetroot -solid gray50 &
+hsetroot -cover ~/wp/sanctu-plain-mono-1440x900.jpg &
 sxhkd &
 polybar top -r &
