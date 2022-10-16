@@ -1,4 +1,5 @@
 hsetroot -solid '#CCC' &
 sxhkd &
 polybar top -r & 
+nm-applet &
 xinput set-prop 10 "Device Enabled" 0
