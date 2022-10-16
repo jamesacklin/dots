@@ -1,3 +1,4 @@
-hsetroot -cover ~/wp/sanctu-plain-mono-1440x900.jpg &
+hsetroot -solid '#CCC' &
 sxhkd &
-polybar top -r &
+polybar top -r & 
+xinput set-prop 10 "Device Enabled" 0
