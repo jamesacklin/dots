@@ -7,3 +7,5 @@
 
 alias ls='ls -al --color=auto'
 PS1='[\u@\h \W]\$ '
+
+source /usr/share/nvm/init-nvm.sh
