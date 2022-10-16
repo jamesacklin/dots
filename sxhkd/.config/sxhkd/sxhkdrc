@@ -11,7 +11,7 @@ XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 alt + shift + Return
-	xterm
+	urxvt
 
 alt + p
 	dmenu_run -fn "terminus-8" -h 22 -nb '#000000' -sf '#000000' -sb '#FFFFFF' -nf '#FFFFFF'
