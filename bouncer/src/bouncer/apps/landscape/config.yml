@@ -1,7 +1,7 @@
 env:
   desk: 'groups'
   urbit_path: '~/src/urbit'
-  repo_path: '~/src/homestead'
+  repo_path: '~/src/landscape-apps'
   garden_path: '~/src/garden'
   ship_path: '~/urbit'
 script:
