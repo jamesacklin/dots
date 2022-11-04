@@ -1,0 +1,7 @@
+#!/bin/bash
+
+screenshot=$(grimshot --notify save area)
+local_dir=$(dirname $screenshot)
+local_file="${local_dir}/screenshot-$(date +"%Y.%m.%d-%H.%M.%S").png"
+mv $screenshot $local_file
+wl-copy $(curl -F "file=@$local_file" https://0x0.st)

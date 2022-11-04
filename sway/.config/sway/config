@@ -200,7 +200,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bindsym Print exec grimshot copy area
+bindsym Print exec ~/scripts/0x0-screenshot
 bindsym Shift+Print exec grimshot save area
 
 #

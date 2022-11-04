@@ -8,6 +8,8 @@
 alias ls='ls -al --color=auto'
 PS1='[\u@\h \W]\$ '
 
+PATH="$PATH:$HOME/scripts"
+
 export DENO_INSTALL="/home/james/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
